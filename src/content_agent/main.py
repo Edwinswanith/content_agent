@@ -28,3 +28,4 @@ def run():
         raise Exception(f"An error occurred while running the crew: {e}")
 
 
+run()
