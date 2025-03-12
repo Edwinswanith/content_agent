@@ -1,0 +1,41 @@
+research_gathering_task:
+  description: >
+    Perform comprehensive research on {topic} using the latest available sources.
+    Ensure all information is current and properly sourced with verifiable references.
+    Focus on gathering detailed, factual information that provides valuable insights.
+    Consider that the current date is {current_date} when assessing information relevance.
+  expected_output: >
+    A detailed collection of researched information including:
+    - Key findings with timestamps
+    - Source URLs and citations
+    - Relevance assessment for each piece of information
+  agent: research_agent
+
+consolidation_task:
+  description: >
+    Analyze and organize the collected research information into a structured format.
+    Identify key themes, patterns, and relationships between different pieces of information.
+    Create a logical flow of information that builds a comprehensive understanding of the topic.
+  expected_output: >
+    A well-organized document containing:
+    - Main themes and categories
+    - Hierarchical structure of information
+    - Connected insights and relationships
+    - Summary of key findings
+  agent: consolidation_agent
+
+content_creation_task:
+  description: >
+    Create engaging social media content based on the consolidated research.
+    Content should be between 150-200 words, optimized for social media engagement.
+    Include 3-5 reference links to support the information presented.
+
+  expected_output: >
+    A social media post that includes:
+    - 150-200 word engaging content
+    - 3-5 relevant reference links
+    - Attention-grabbing opening
+    - Clear call-to-action or thought-provoking conclusion
+    - 3 Hashtags related to the {topic} 
+    -Output shouldn't have any emojis
+  agent: content_creation_agent
